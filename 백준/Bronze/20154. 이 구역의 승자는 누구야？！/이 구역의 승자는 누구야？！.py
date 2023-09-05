@@ -19,6 +19,7 @@ for i in range(0, len(s), 2):
         result += add
     if result >= 10:
         result %= 10
+# 정답 판별
 if result % 2 == 1:
     print("I'm a winner!")
 else:
