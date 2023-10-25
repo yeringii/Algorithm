@@ -6,8 +6,6 @@ def solution(cards1, cards2, goal):
     cards2 = deque(cards2)
     goal = deque(goal)
     
-    # 먼저 끝난 list
-    end = ''
     
     while goal:
         
@@ -23,6 +21,7 @@ def solution(cards1, cards2, goal):
             cards2.appendleft(check2)
         elif g == check2:
             cards1.appendleft(check1)
+            
     if len(goal) == 0:
         answer = "Yes"
     else:
